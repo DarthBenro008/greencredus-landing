@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code -->
+
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=1440, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+@font-face {
+    font-family: "Sk-Modernist-Bold";
+	font-style: normal;
+	font-weight: 700;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/5fda62618026b910dad882c0/files/sk-modernist-bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Sk-Modernist-Regular";
+	font-style: normal;
+	font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/5c649157e3ddb8000ca26cab/Sk-Modernist-Regular.otf') format("opentype");
+}
+
+.component-wrapper a,
+.screen a {
+    text-decoration: none;
+    display: contents;
+}
+
+
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen *,
+.component-wrapper *{
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.container-center-vertical,
+.container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.container-center-vertical {
+    align-items: center;
+    height: 100%;
+}
+
+.container-center-horizontal {
+    justify-content: center;
+    width: 100%;
+}
+
+.container-center-vertical > *,
+.container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+}
+
+.component-wrapper,
+.screen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.auto-animated div {
+    opacity: 0;
+    position: absolute;
+    --z-index: -1;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay {
+position: absolute;
+opacity: 0;
+display: none;
+top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.animate-appear {
+    opacity: 0;
+    display: block;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.animate-disappear {
+    opacity: 1;
+    display: block;
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.align-self-flex-start {
+    align-self: flex-start;
+}
+.align-self-flex-end {
+    align-self: flex-end;
+}
+.align-self-flex-center {
+    align-self: center;
+}
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ input:focus {
+    outline: none;
+}
+.component-wrapper,
+.component-wrapper * {
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper a,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe,
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+/* screen - landing-page */
+
+.animate-enter {
+  animation: animate-enter-frames 0.70s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 25px);
+}
+.animate-enter1 {
+  animation: animate-enter1-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter10 {
+  animation: animate-enter10-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter11 {
+  animation: animate-enter11-frames 0.80s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 25px);
+}
+.animate-enter12 {
+  animation: animate-enter12-frames 0.80s ease-in-out 0.40s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter13 {
+  animation: animate-enter13-frames 0.80s ease-in-out 0.40s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter14 {
+  animation: animate-enter14-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter15 {
+  animation: animate-enter15-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter16 {
+  animation: animate-enter16-frames 0.60s ease-in-out 0.30s 1 normal forwards;
+  display: block;
+opacity: 0;transform: scale(1.1);
+}
+.animate-enter17 {
+  animation: animate-enter17-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter18 {
+  animation: animate-enter18-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter19 {
+  animation: animate-enter19-frames 0.80s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter2 {
+  animation: animate-enter2-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter20 {
+  animation: animate-enter20-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 25px);
+}
+.animate-enter21 {
+  animation: animate-enter21-frames 0.26s ease-in 0.30s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 25px);
+}
+.animate-enter22 {
+  animation: animate-enter22-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter23 {
+  animation: animate-enter23-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter3 {
+  animation: animate-enter3-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter4 {
+  animation: animate-enter4-frames 0.50s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter5 {
+  animation: animate-enter5-frames 0.80s ease-in-out 1.00s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter6 {
+  animation: animate-enter6-frames 0.80s ease-in-out 1.00s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.animate-enter7 {
+  animation: animate-enter7-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 25px);
+}
+.animate-enter8 {
+  animation: animate-enter8-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.animate-enter9 {
+  animation: animate-enter9-frames 0.60s ease-in-out 0.20s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page {
+  background-color: rgba(18,18,18,1.0);
+  height: 100vh;
+  margin: 0px;
+  min-height: 13851px;
+  min-width: 1440px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.landing-page .allows-you-your-hands-2osFvC {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  right: 1px;
+  text-align: left;
+  top: 373px;
+  width: 694px;
+}
+.landing-page .app-features-2osFvC {
+  background-color: transparent;
+  color: var(--eucalyptus);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.80px;
+  line-height: 58.0px;
+  position: absolute;
+  right: 414px;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 278px;
+}
+.landing-page .bg-2qGyNx {
+  background-color: transparent;
+  height: 2070px;
+  left: -311px;
+  position: absolute;
+  top: -312px;
+  width: 3129px;
+}
+.landing-page .bg-87p3Hy {
+  background-color: transparent;
+  height: 2712px;
+  left: -286px;
+  position: absolute;
+  top: -286px;
+  width: 2830px;
+}
+.landing-page .bg-C61RwL {
+  background-color: transparent;
+  height: 3856px;
+  left: -2372px;
+  position: absolute;
+  top: 5252px;
+  width: 3587px;
+}
+.landing-page .bg-NOXmfT {
+  background-color: transparent;
+  bottom: -468px;
+  height: 1938px;
+  left: calc(50.00% - 2475px);
+  position: absolute;
+  transform: rotate(1.06deg);
+  width: 4953px;
+}
+.landing-page .bg-TGwpbG {
+  background-color: transparent;
+  height: 1746px;
+  left: 72px;
+  position: absolute;
+  top: 508px;
+  transform: rotate(25.44deg);
+  width: 2863px;
+}
+.landing-page .bg-VMr6Om {
+  background-color: transparent;
+  height: 4096px;
+  position: absolute;
+  right: -2513px;
+  top: 4068px;
+  width: 4060px;
+}
+.landing-page .bg-mzXdH9 {
+  background-color: transparent;
+  display: block;
+  height: 807px;
+  position: absolute;
+  right: -326px;
+  top: 4791px;
+  width: 962px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .bg-x6neD3 {
+  background-color: transparent;
+  height: 2704px;
+  left: -264px;
+  position: absolute;
+  top: -376px;
+  width: 2857px;
+}
+.landing-page .bg-xPEQ02 {
+  background-color: transparent;
+  height: 1746px;
+  left: -322px;
+  position: absolute;
+  top: -960px;
+  transform: rotate(25.44deg);
+  width: 2864px;
+}
+.landing-page .button-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 78px;
+  left: 707px;
+  position: absolute;
+  top: 3504px;
+  width: 382px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .button-CX7m3G {
+  background-color: transparent;
+  height: 78px;
+  left: 0px;
+  position: absolute;
+  top: 301px;
+  width: 313px;
+}
+.landing-page .button-EWrWm8 {
+  background-color: transparent;
+  height: 103px;
+  left: calc(50.00% - 167px);
+  position: absolute;
+  top: -16px;
+  width: 334px;
+}
+.landing-page .button-JYJGxe {
+  background-color: transparent;
+  height: 103px;
+  left: calc(50.00% - 167px);
+  position: absolute;
+  top: -16px;
+  width: 334px;
+}
+.landing-page .button-Pcn8hI {
+  background-color: var(--eucalyptus);
+  border-radius: 3.42111873626709px;
+  box-shadow: 0px 0px 42.76398468017578px rgba(62,255,162,0.4);;
+  height: 78px;
+  left: calc(50.00% - 157px);
+  position: relative;
+  top: 0px;
+  width: 313px;
+}
+.landing-page .button-VMr6Om {
+  background-color: var(--eucalyptus);
+  border-radius: 3.42111873626709px;
+  box-shadow: 0px 0px 42.76398468017578px rgba(62,255,162,0.4);;
+  display: block;
+  height: 78px;
+  left: calc(50.00% - 635px);
+  position: absolute;
+  top: 4972px;
+  width: 414px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .button-gW6vdi {
+  background-color: transparent;
+  height: 78px;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 348px;
+  transition: all 0.23s ease-in;
+  width: 313px;
+}
+.landing-page .button-gW6vdi:hover {
+
+box-shadow: 0px 0px 10px 2px rgb(62,255,162);
+}
+.landing-page .button-i6hZmb {
+  background-color: var(--eucalyptus);
+  border-radius: 3.42111873626709px;
+  bottom: 0px;
+  box-shadow: 0px 0px 42.76398468017578px rgba(62,255,162,0.4);;
+  height: 78px;
+  left: calc(50.00% - 157px);
+  position: absolute;
+  width: 313px;
+}
+.landing-page .button-mzXdH9 {
+  background-color: transparent;
+  border: 1px solid var(--alabaster);
+  border-radius: 6px;
+  height: 71px;
+  left: 563px;
+  position: absolute;
+  top: 13650px;
+  width: 313px;
+}
+.landing-page .button-tIF87l {
+  background-color: transparent;
+  border: 1px solid var(--eucalyptus);
+  border-radius: 6px;
+  height: 71px;
+  left: 0px;
+  position: absolute;
+  top: 469px;
+  width: 313px;
+}
+.landing-page .button-xHxYv9 {
+  background-color: var(--eucalyptus);
+  border-radius: 3.42111873626709px;
+  box-shadow: 0px 0px 42.76398468017578px rgba(62,255,162,0.4);;
+  height: 78px;
+  left: calc(50.00% - 191px);
+  position: relative;
+  top: 0px;
+  width: 382px;
+}
+.landing-page .coin-W9ouXn {
+  background-color: transparent;
+  height: 54px;
+  left: 1231px;
+  position: absolute;
+  top: 626px;
+  width: 54px;
+}
+.landing-page .coin-aauQt4 {
+  background-color: transparent;
+  height: 54px;
+  left: 1246px;
+  position: absolute;
+  top: 665px;
+  width: 54px;
+}
+.landing-page .coin-oGyBcK {
+  background-color: transparent;
+  height: 141px;
+  left: 0px;
+  position: absolute;
+  top: 17px;
+  width: 141px;
+}
+.landing-page .coin-yWKy9X {
+  background-color: transparent;
+  height: 82px;
+  left: 1198px;
+  position: absolute;
+  top: 642px;
+  width: 82px;
+}
+.landing-page .componentl-4mv-tmjson-yWKy9X {
+  background-color: transparent;
+  height: 226px;
+  left: 59px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 226px;
+}
+.landing-page .componentl-aok5nejson-yWKy9X {
+  background-color: transparent;
+  height: 223px;
+  left: 532px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 223px;
+}
+.landing-page .componentl-bfm-hvjson-yWKy9X {
+  background-color: transparent;
+  height: 226px;
+  left: 1004px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 226px;
+}
+.landing-page .componentl-gu-tlkjson-yWKy9X {
+  background-color: transparent;
+  height: 226px;
+  left: 59px;
+  object-fit: cover;
+  position: absolute;
+  top: 517px;
+  width: 226px;
+}
+.landing-page .componentl-kzdatajson-yWKy9X {
+  background-color: transparent;
+  height: 226px;
+  left: 532px;
+  object-fit: cover;
+  position: absolute;
+  top: 514px;
+  width: 226px;
+}
+.landing-page .componentl-v8datajson-yWKy9X {
+  background-color: transparent;
+  height: 184px;
+  left: 1055px;
+  object-fit: cover;
+  position: absolute;
+  top: 535px;
+  width: 184px;
+}
+.landing-page .easy-trans-de-scanner-2osFvC {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 24px;
+  height: auto;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  right: 1px;
+  text-align: left;
+  top: 469px;
+  white-space: nowrap;
+  width: 694px;
+}
+.landing-page .final-main-1-x6neD3 {
+  background-color: transparent;
+  height: 1477px;
+  left: 455px;
+  position: absolute;
+  top: 573px;
+  width: 1834px;
+}
+.landing-page .frame-1-jQ4qbJ {
+  background-color: transparent;
+  height: 114px;
+  left: 94px;
+  position: absolute;
+  top: 405px;
+  width: 116px;
+}
+.landing-page .frame-2-jQ4qbJ {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/image-25@2x.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 96px;
+  left: 970px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.landing-page .frame-3-jQ4qbJ {
+  background-color: transparent;
+  height: 96px;
+  left: 537px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.landing-page .frame-4-jQ4qbJ {
+  background-color: transparent;
+  height: 96px;
+  left: 135px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.landing-page .frame-5-jQ4qbJ {
+  background-color: transparent;
+  height: 114px;
+  left: 545px;
+  position: absolute;
+  top: 725px;
+  width: 81px;
+}
+.landing-page .frame-8-0sr6MH {
+  background-color: transparent;
+  height: 523px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 823px;
+}
+.landing-page .frame-9-yWKy9X {
+  background-color: transparent;
+  height: 523px;
+  left: 351px;
+  position: absolute;
+  top: 150px;
+  width: 823px;
+}
+.landing-page .gain-more-credits-7olElM {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.80px;
+  line-height: 58.0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 427px;
+}
+.landing-page .group-1-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 336px;
+  left: 104px;
+  position: absolute;
+  top: 10140px;
+  width: 406px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-1-CX7m3G {
+  background-color: transparent;
+  height: 246px;
+  left: 10px;
+  position: absolute;
+  top: 0px;
+  width: 295px;
+}
+.landing-page .group-50-oGyBcK {
+  background-color: transparent;
+  height: 128px;
+  left: 668px;
+  position: absolute;
+  top: 23px;
+  width: 128px;
+}
+.landing-page .group-51-odKgLo {
+  background-color: transparent;
+  height: 166px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 796px;
+}
+.landing-page .group-52-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 248px;
+  left: 303px;
+  position: absolute;
+  top: 3889px;
+  width: 837px;
+opacity: 0;transform: translate(0, 25px);
+}
+.landing-page .group-53-sDLNVS {
+  background-color: transparent;
+  height: 725px;
+  left: -55px;
+  position: absolute;
+  top: -44px;
+  width: 457px;
+}
+.landing-page .group-55-Z1JSTw {
+  background-color: transparent;
+  height: 725px;
+  position: absolute;
+  right: -56px;
+  top: -44px;
+  width: 458px;
+}
+.landing-page .group-56-aCi14x {
+  background-color: transparent;
+  height: 725px;
+  position: absolute;
+  right: -56px;
+  top: -44px;
+  width: 458px;
+}
+.landing-page .group-58-ql7mN0 {
+  background-color: transparent;
+  height: 723px;
+  left: -55px;
+  position: absolute;
+  top: -44px;
+  width: 413px;
+}
+.landing-page .group-60-ASxCBk {
+  background-color: transparent;
+  height: 201px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 524px;
+}
+.landing-page .group-62-gW6vdi {
+  background-color: transparent;
+  height: 260px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 524px;
+}
+.landing-page .group-65-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 2140px;
+  left: -1327px;
+  position: absolute;
+  top: 2211px;
+  width: 2259px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-66-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 2050px;
+  left: -1184px;
+  position: absolute;
+  top: -953px;
+  width: 2328px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-67-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 540px;
+  left: 720px;
+  position: absolute;
+  top: 136px;
+  width: 524px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-68-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 240px;
+  left: 707px;
+  position: absolute;
+  top: 3160px;
+  width: 736px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-69-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 273px;
+  left: 85px;
+  position: absolute;
+  top: 4626px;
+  width: 759px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-70-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 325px;
+  left: 112px;
+  position: absolute;
+  top: 1203px;
+  width: 1220px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-72-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 3111px;
+  left: -1773px;
+  position: absolute;
+  top: 7215px;
+  width: 4627px;
+opacity: 0;transform: scale(1.1);
+}
+.landing-page .group-73-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 611px;
+  left: 313px;
+  position: absolute;
+  top: 5689px;
+  width: 648px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-74-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 614px;
+  left: 372px;
+  position: absolute;
+  top: 6180px;
+  width: 743px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-75-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 614px;
+  left: 290px;
+  position: absolute;
+  top: 6709px;
+  width: 784px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-76-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 614px;
+  left: 293px;
+  position: absolute;
+  top: 7214px;
+  width: 822px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-77-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 507px;
+  left: 598px;
+  position: absolute;
+  top: 10041px;
+  width: 695px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-79-nxK461 {
+  background-color: transparent;
+  height: 246px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 295px;
+}
+.landing-page .group-80-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 379px;
+  left: 563px;
+  position: absolute;
+  top: 13197px;
+  width: 313px;
+opacity: 0;transform: translate(0, 25px);
+}
+.landing-page .group-81-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 185px;
+  left: 147px;
+  position: absolute;
+  top: 11245px;
+  width: 847px;
+opacity: 0;transform: translate(-25px, 0);
+}
+.landing-page .group-83-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 1030px;
+  left: 126px;
+  position: absolute;
+  top: 12007px;
+  width: 1205px;
+opacity: 0;transform: translate(0, 25px);
+}
+.landing-page .group-85-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 1124px;
+  left: 748px;
+  position: absolute;
+  top: 4281px;
+  width: 1442px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .group-86-gqbUX1 {
+  background-color: transparent;
+  height: 238px;
+  left: 2888px;
+  position: absolute;
+  top: 994px;
+  width: 308px;
+}
+.landing-page .group-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 946px;
+  left: -1241px;
+  pointer-events: auto;
+  position: absolute;
+  top: 13378px;
+  transform: rotate(-1.06deg);
+  transition: all 0.3s ease;
+  width: 3970px;
+opacity: 0;transform: translate(0, 25px);
+}
+.landing-page .group-C61RwL:hover {
+
+filter: blur(10px);
+}
+.landing-page .group-O4zVYD {
+  background-color: transparent;
+  height: 104.97%;
+  left: -1.58%;
+  position: absolute;
+  top: -2.49%;
+  width: 103.16%;
+}
+.landing-page .group-eCYV9J {
+  background-color: transparent;
+  height: 597px;
+  left: 7px;
+  position: absolute;
+  top: 1162px;
+  transform: rotate(-25.44deg);
+  width: 2506px;
+}
+.landing-page .group-gqbUX1 {
+  background-color: transparent;
+  height: 1447px;
+  left: 1230px;
+  opacity: 0.75;
+  position: absolute;
+  top: 1085px;
+  width: 2506px;
+}
+.landing-page .group-poDR27 {
+  background-color: transparent;
+  height: 2066px;
+  left: 1424px;
+  position: absolute;
+  top: 523px;
+  transform: rotate(-25.44deg);
+  width: 2900px;
+}
+.landing-page .httpsappgreen-credus-jQ4qbJ {
+  background-color: transparent;
+  color: var(--eucalyptus);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 415px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 996px;
+  width: 343px;
+}
+.landing-page .image-2-ymgm1b {
+  background-color: transparent;
+  height: 96px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 65px;
+}
+.landing-page .image-26-fwgNWF {
+  background-color: transparent;
+  height: 100.42%;
+  left: -0.46%;
+  position: absolute;
+  top: -0.21%;
+  width: 100.92%;
+}
+.landing-page .image-49-TGwpbG {
+  background-color: transparent;
+  height: 1364px;
+  left: 210px;
+  object-fit: cover;
+  position: absolute;
+  top: 303px;
+  transform: rotate(25.44deg);
+  width: 1719px;
+}
+.landing-page .image-6-PV1dqe {
+  background-color: transparent;
+  height: 196px;
+  left: calc(50.00% - 98px);
+  object-fit: cover;
+  position: absolute;
+  top: -27px;
+  width: 196px;
+}
+.landing-page .image-7-PV1dqe {
+  background-color: transparent;
+  height: 142px;
+  left: calc(50.00% - 70px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 141px;
+}
+.landing-page .leverages--ansactions-2osFvC {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 24px;
+  height: auto;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  right: 1px;
+  text-align: left;
+  top: 277px;
+  width: 694px;
+}
+.landing-page .login-screen-1-rFX9Nh {
+  background-color: transparent;
+  display: block;
+  height: 987px;
+  object-fit: cover;
+  position: absolute;
+  right: -1px;
+  top: 137px;
+  width: 1232px;
+opacity: 0;transform: translate(25px, 0);
+}
+.landing-page .mask-group-82mkN9 {
+  background-color: transparent;
+  height: 128px;
+  left: calc(50.00% - 64px);
+  position: absolute;
+  top: 0px;
+  width: 128px;
+}
+.landing-page .mask-group-VyzZeT {
+  background-color: transparent;
+  height: 226px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 406px;
+}
+.landing-page .mask-group-tSnZM2 {
+  background-color: transparent;
+  bottom: 82px;
+  height: 164px;
+  left: calc(50.00% - 148px);
+  position: absolute;
+  width: 295px;
+}
+.landing-page .mask-group-xoGcjq {
+  background-color: transparent;
+  height: 153px;
+  left: calc(50.00% - 76px);
+  position: absolute;
+  top: -13px;
+  width: 152px;
+}
+.landing-page .otp-1-rFX9Nh {
+  background-color: transparent;
+  height: 986px;
+  object-fit: cover;
+  position: absolute;
+  right: 210px;
+  top: 0px;
+  width: 1232px;
+}
+.landing-page .smartpy-1-jQ4qbJ {
+  background-color: transparent;
+  height: 114px;
+  left: 541px;
+  overflow: hidden;
+  position: absolute;
+  top: 405px;
+  width: 89px;
+}
+.landing-page .solution-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 875px;
+  left: calc(50.00% - 670px);
+  position: absolute;
+  top: 1846px;
+  width: 1342px;
+opacity: 0;transform: translate(0, 25px);
+}
+.landing-page .solving-ca-reen-cards-HTRK2z {
+  background-color: transparent;
+  height: 48px;
+  left: calc(50.00% - 263px);
+  position: absolute;
+  top: 154px;
+  width: 415px;
+}
+.landing-page .solving-ca-reen-cards-l08qMG {
+  background-color: transparent;
+  height: 203px;
+  left: calc(50.00% - 263px);
+  position: absolute;
+  top: -1px;
+  width: 526px;
+}
+.landing-page .span1-1Bk6AC {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-7dForR {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-BMMue1 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-DxkMeL {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-GIXJlx {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-J9OOaH {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-LfAVxj {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-LuYSKt {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-Lv4pUT {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-THaQYJ {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-VMxB0d {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-c3I41H {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-e0SNYK {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-hiWAvb {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-jh2cxs {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-lm3Xvm {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-pGyjSN {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-qWkIkV {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-vKnOeI {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-x7H29E {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span1-xbDz09 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span1-xpiFqI {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-1Bk6AC {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-7dForR {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-BMMue1 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-DxkMeL {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-GIXJlx {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-J9OOaH {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-LfAVxj {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-LuYSKt {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-Lv4pUT {
+  color: rgba(67,99,255,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-THaQYJ {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-VMxB0d {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-c3I41H {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-e0SNYK {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-hiWAvb {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-jh2cxs {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-lm3Xvm {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-pGyjSN {
+  color: rgba(67,99,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-qWkIkV {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span2-vKnOeI {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-x7H29E {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-xbDz09 {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span2-xpiFqI {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span3-BMMue1 {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span3-GIXJlx {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-LfAVxj {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span3-Lv4pUT {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-THaQYJ {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-c3I41H {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span3-e0SNYK {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span3-hiWAvb {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-jh2cxs {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-lm3Xvm {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-pGyjSN {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span3-qWkIkV {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span4-BMMue1 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span4-GIXJlx {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span4-LfAVxj {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span4-e0SNYK {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span4-lm3Xvm {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span5-BMMue1 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span5-GIXJlx {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span5-LfAVxj {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span5-e0SNYK {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span5-lm3Xvm {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span6-BMMue1 {
+  color: rgba(250,250,250,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span6-LfAVxj {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .span6-e0SNYK {
+  color: rgba(255,255,255,1.0);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.landing-page .span7-BMMue1 {
+  color: rgba(61,255,162,1.0);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 28.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.landing-page .submit-you-n-emission-7olElM {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 96px;
+  width: 846px;
+}
+.landing-page .symbol-6Uv1bv {
+  background-color: transparent;
+  height: 203px;
+  left: calc(50.00% - 102px);
+  object-fit: cover;
+  position: absolute;
+  top: -18px;
+  width: 203px;
+}
+.landing-page .symbol-W9ouXn {
+  background-color: transparent;
+  height: 40px;
+  left: 1190px;
+  object-fit: cover;
+  position: absolute;
+  top: 156px;
+  width: 40px;
+}
+.landing-page .symbol-nKLNpo {
+  background-color: transparent;
+  height: 166px;
+  left: calc(50.00% - 84px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 167px;
+}
+.landing-page .symbol-yWKy9X {
+  background-color: transparent;
+  height: 48px;
+  left: 1185px;
+  object-fit: cover;
+  position: absolute;
+  top: 152px;
+  width: 48px;
+}
+.landing-page .test-1-C61RwL {
+  background-color: transparent;
+  height: 791px;
+  left: calc(50.00% - 823px);
+  object-fit: cover;
+  position: absolute;
+  top: 10814px;
+  width: 1728px;
+}
+.landing-page .the-app-wo-n-emission-kber4s {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 610px);
+  letter-spacing: 0.96px;
+  line-height: 38.4px;
+  position: absolute;
+  text-align: left;
+  top: 255px;
+  width: 1162px;
+}
+.landing-page .title-404iow {
+  background-color: transparent;
+  height: auto;
+  left: 896px;
+  letter-spacing: 0.36px;
+  line-height: 26.1px;
+  position: absolute;
+  text-align: center;
+  top: 626px;
+  width: 307px;
+}
+.landing-page .title-4X9iy5 {
+  background-color: transparent;
+  height: auto;
+  left: 966px;
+  letter-spacing: 0.76px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 171px;
+  width: 105px;
+}
+.landing-page .title-5nOBl0 {
+  background-color: transparent;
+  height: auto;
+  left: 38px;
+  letter-spacing: 0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 245px;
+  width: 265px;
+}
+.landing-page .title-6qTbQc {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 212px);
+  letter-spacing: 0.49px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 219px;
+  width: 206px;
+}
+.landing-page .title-8FQU39 {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 40px;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.80px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 758px;
+}
+.landing-page .title-8NMtNq {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 368px);
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 196px;
+  width: 702px;
+}
+.landing-page .title-8V7Q3m {
+  background-color: transparent;
+  height: 28px;
+  left: 22px;
+  position: absolute;
+  top: 25px;
+  width: 370px;
+}
+.landing-page .title-ASxCBk {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24.8px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 260px);
+  letter-spacing: 0.50px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 230px;
+  width: 499px;
+}
+.landing-page .title-BjrbeJ {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.76px;
+  line-height: 55.5px;
+  position: absolute;
+  text-align: center;
+  top: 547px;
+  white-space: nowrap;
+  width: 289px;
+}
+.landing-page .title-C61RwL {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 64px;
+  height: auto;
+  left: calc(50.00% - 191px);
+  letter-spacing: 1.28px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1733px;
+  width: auto;
+}
+.landing-page .title-DVw1NO {
+  background-color: transparent;
+  height: auto;
+  left: 432px;
+  letter-spacing: 0.36px;
+  line-height: 26.1px;
+  position: absolute;
+  text-align: center;
+  top: 626px;
+  white-space: nowrap;
+  width: 307px;
+}
+.landing-page .title-EAchaQ {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 40px;
+  height: auto;
+  left: calc(50.00% - 366px);
+  letter-spacing: 0.80px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 586px;
+}
+.landing-page .title-KZ2dJE {
+  background-color: transparent;
+  height: 28px;
+  left: 21px;
+  position: absolute;
+  top: 25px;
+  width: 271px;
+}
+.landing-page .title-LILxj4 {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 24px;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 190px;
+  width: 686px;
+}
+.landing-page .title-MntJHD {
+  background-color: transparent;
+  height: auto;
+  left: 932px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 796px;
+  width: 409px;
+}
+.landing-page .title-O2nOzL {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 796px;
+  width: 347px;
+}
+.landing-page .title-QaB2cZ {
+  background-color: transparent;
+  height: auto;
+  left: 432px;
+  letter-spacing: 0.36px;
+  line-height: 26.1px;
+  position: absolute;
+  text-align: center;
+  top: 933px;
+  white-space: nowrap;
+  width: 307px;
+}
+.landing-page .title-TH9Qx3 {
+  background-color: transparent;
+  height: auto;
+  left: 494px;
+  letter-spacing: 0.76px;
+  line-height: 55.5px;
+  position: absolute;
+  text-align: center;
+  top: 868px;
+  white-space: nowrap;
+  width: 183px;
+}
+.landing-page .title-VMr6Om {
+  background-color: transparent;
+  color: var(--eucalyptus);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 154.2px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: -23px;
+  letter-spacing: 3.08px;
+  line-height: normal;
+  opacity: 0.1;
+  position: absolute;
+  text-align: left;
+  top: 11683px;
+  width: 792px;
+}
+.landing-page .title-VyzZeT {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 43.3px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 62px;
+  letter-spacing: 0.87px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 257px;
+  width: 283px;
+}
+.landing-page .title-W9ouXn {
+  background-color: transparent;
+  height: auto;
+  left: 955px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 280px;
+  width: 326px;
+}
+.landing-page .title-Z1JSTw {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.57px;
+  line-height: 41.0px;
+  position: absolute;
+  right: 414px;
+  text-align: left;
+  top: 251px;
+  width: 407px;
+}
+.landing-page .title-aCi14x {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.57px;
+  line-height: 41.0px;
+  position: absolute;
+  right: 446px;
+  text-align: left;
+  top: 275px;
+  width: 297px;
+}
+.landing-page .title-aVbvRo {
+  background-color: transparent;
+  bottom: 0px;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 134px);
+  letter-spacing: 0.28px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+.landing-page .title-aauQt4 {
+  background-color: transparent;
+  height: auto;
+  left: 98px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 280px;
+  white-space: nowrap;
+  width: 155px;
+}
+.landing-page .title-dsIKeI {
+  background-color: transparent;
+  height: auto;
+  left: 865px;
+  letter-spacing: 0.36px;
+  line-height: 26.1px;
+  position: absolute;
+  text-align: center;
+  top: 245px;
+  width: 307px;
+}
+.landing-page .title-g0z608 {
+  background-color: transparent;
+  height: auto;
+  left: 504px;
+  letter-spacing: 0.76px;
+  line-height: 55.5px;
+  position: absolute;
+  text-align: center;
+  top: 548px;
+  white-space: nowrap;
+  width: 166px;
+}
+.landing-page .title-jQ4qbJ {
+  background-color: transparent;
+  height: auto;
+  left: 113px;
+  letter-spacing: 0.76px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 171px;
+  width: 112px;
+}
+.landing-page .title-joLlnU {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 119px);
+  letter-spacing: 0.49px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 219px;
+  width: 240px;
+}
+.landing-page .title-kA8htT {
+  background-color: transparent;
+  height: 28px;
+  left: 22px;
+  position: absolute;
+  top: 25px;
+  width: 344px;
+}
+.landing-page .title-kber4s {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 36px;
+  height: auto;
+  left: calc(50.00% - 610px);
+  letter-spacing: 0.36px;
+  line-height: 52.2px;
+  position: absolute;
+  text-align: left;
+  top: 113px;
+  width: 1219px;
+}
+.landing-page .title-mzXdH9 {
+  background-color: transparent;
+  color: var(--eucalyptus);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 75.9px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 139px;
+  letter-spacing: 1.52px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 11822px;
+  width: 391px;
+}
+.landing-page .title-odKgLo {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 416px);
+  letter-spacing: 0.49px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 219px;
+  width: 141px;
+}
+.landing-page .title-qZKU2D {
+  background-color: transparent;
+  height: 28px;
+  left: 21px;
+  position: absolute;
+  top: 25px;
+  width: 271px;
+}
+.landing-page .title-ql7mN0 {
+  background-color: transparent;
+  height: auto;
+  left: 405px;
+  letter-spacing: 0.57px;
+  line-height: 41.0px;
+  position: absolute;
+  text-align: left;
+  top: 214px;
+  white-space: nowrap;
+  width: 242px;
+}
+.landing-page .title-r1LdjF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.36px;
+  line-height: 26.1px;
+  position: absolute;
+  text-align: center;
+  top: 626px;
+  white-space: nowrap;
+  width: 307px;
+}
+.landing-page .title-r7zgn6 {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 18px;
+  height: auto;
+  left: 436px;
+  letter-spacing: 0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 245px;
+  width: 300px;
+}
+.landing-page .title-ri4jeA {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 17.3px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.35px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 315px;
+  width: 336px;
+}
+.landing-page .title-sDLNVS {
+  background-color: transparent;
+  height: auto;
+  left: 521px;
+  letter-spacing: 0.57px;
+  line-height: 41.0px;
+  position: absolute;
+  text-align: left;
+  top: 234px;
+  width: 262px;
+}
+.landing-page .title-tSnZM2 {
+  background-color: transparent;
+  bottom: 23px;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 103px);
+  letter-spacing: 0.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+.landing-page .title-u75Yok {
+  background-color: transparent;
+  height: auto;
+  left: 977px;
+  letter-spacing: 0.76px;
+  line-height: 55.5px;
+  position: absolute;
+  text-align: center;
+  top: 547px;
+  white-space: nowrap;
+  width: 161px;
+}
+.landing-page .title-wv8g62 {
+  background-color: transparent;
+  height: auto;
+  left: 546px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 796px;
+  width: 198px;
+}
+.landing-page .title-x253Wx {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 368px);
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 94px;
+  width: 735px;
+}
+.landing-page .title-x7I0ux {
+  background-color: transparent;
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 610px);
+  letter-spacing: 1.28px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.landing-page .title-xOD5Xn {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: left;
+  top: 96px;
+  width: 686px;
+}
+.landing-page .title-xp7Z8m {
+  background-color: transparent;
+  height: auto;
+  left: 530px;
+  letter-spacing: 0.76px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 171px;
+  width: 111px;
+}
+.landing-page .title-yWKy9X {
+  background-color: transparent;
+  height: auto;
+  left: 468px;
+  letter-spacing: 0.18px;
+  line-height: 26.2px;
+  position: absolute;
+  text-align: center;
+  top: 278px;
+  width: 355px;
+}
+.landing-page .token-oGyBcK {
+  background-color: transparent;
+  height: 166px;
+  left: 321px;
+  position: absolute;
+  top: 0px;
+  width: 166px;
+}
+.landing-page .using-a-pw-wer-needed-2osFvC {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  right: 1px;
+  text-align: left;
+  top: 181px;
+  width: 694px;
+}
+.landing-page .using-dark-n-emission-2osFvC {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.48px;
+  line-height: 34.8px;
+  position: absolute;
+  right: 27px;
+  text-align: left;
+  top: 86px;
+  width: 665px;
+}
+.landing-page .vector-0kI3dB {
+  background-color: transparent;
+  height: 53.50%;
+  left: 0px;
+  position: absolute;
+  top: 45.75%;
+  width: 101.03%;
+}
+.landing-page .vector-2BsK37 {
+  background-color: transparent;
+  height: 70.16%;
+  left: 17.77%;
+  position: absolute;
+  top: 23.85%;
+  width: 64.46%;
+}
+.landing-page .vector-7NMPZ6 {
+  background-color: transparent;
+  height: 69.72%;
+  left: 18.23%;
+  position: absolute;
+  top: 24.05%;
+  width: 63.58%;
+}
+.landing-page .vector-KV7wfx {
+  background-color: transparent;
+  height: 25.87%;
+  left: 43.54%;
+  position: absolute;
+  top: 18.22%;
+  width: 16.66%;
+}
+.landing-page .vector-MjZcDm {
+  background-color: transparent;
+  height: 25.00%;
+  left: 43.61%;
+  position: absolute;
+  top: 18.64%;
+  width: 16.23%;
+}
+.landing-page .vector-OEDUi7 {
+  background-color: transparent;
+  height: 100.37%;
+  left: -0.23%;
+  position: absolute;
+  top: 0px;
+  width: 100.47%;
+}
+.landing-page .vector-OvS5gw {
+  background-color: transparent;
+  height: 53.50%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 101.03%;
+}
+.landing-page .vector-Y25QDo {
+  background-color: transparent;
+  height: 20.61%;
+  left: 21.29%;
+  position: absolute;
+  top: 60.33%;
+  width: 58.94%;
+}
+.landing-page .vector-YXgrpn {
+  background-color: transparent;
+  height: 20.17%;
+  left: 20.09%;
+  position: absolute;
+  top: 18.34%;
+  width: 58.94%;
+}
+.landing-page .vector-ZHWKNs {
+  background-color: transparent;
+  height: 70.16%;
+  left: 18.32%;
+  position: absolute;
+  top: 6.38%;
+  width: 25.43%;
+}
+.landing-page .vector-leBUoI {
+  background-color: transparent;
+  height: 100.50%;
+  left: -0.27%;
+  position: absolute;
+  top: -0.25%;
+  width: 100.55%;
+}
+.landing-page .vector-phZgax {
+  background-color: transparent;
+  height: 15.35%;
+  left: 12.22%;
+  position: absolute;
+  top: 23.62%;
+  width: 7.86%;
+}
+.landing-page .vector-rgr8zj {
+  background-color: transparent;
+  height: 17.98%;
+  left: 17.77%;
+  position: absolute;
+  top: 76.07%;
+  width: 64.46%;
+}
+.landing-page .vector-tJMMzZ {
+  background-color: transparent;
+  height: 71.04%;
+  left: 17.79%;
+  position: absolute;
+  top: 6.04%;
+  width: 26.31%;
+}
+.landing-page .vector-zZ1zT6 {
+  background-color: transparent;
+  height: 49.11%;
+  left: 17.82%;
+  position: absolute;
+  top: 27.87%;
+  width: 34.20%;
+}
+.landing-page .vertida-1-87p3Hy {
+  background-color: transparent;
+  height: 1133px;
+  left: 919px;
+  object-fit: cover;
+  position: absolute;
+  top: 442px;
+  width: 1291px;
+}
+.landing-page .vscode-ico-e-firebase-jQ4qbJ {
+  background-color: transparent;
+  height: 114px;
+  left: 997px;
+  overflow: hidden;
+  position: absolute;
+  top: 405px;
+  width: 114px;
+}
+.roboto-normal-white-18px {
+  color: var(--white);
+  font-family: 'Roboto', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sk-modernist-bold-alabaster-24-3px {
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 24.3px;
+  font-style: normal;
+  font-weight: 700;
+}
+.sk-modernist-bold-alabaster-38-2px {
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 38.2px;
+  font-style: normal;
+  font-weight: 700;
+}
+.sk-modernist-bold-alabaster-38-2px-2 {
+  color: var(--alabaster);
+  font-family: 'Sk-Modernist-Bold', Helvetica, Arial, serif;
+  font-size: 38.2px;
+  font-style: normal;
+  font-weight: 700;
+}
+.sk-modernist-normal-white-18px {
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 18px;
+}
+.sk-modernist-normal-white-24px {
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 24px;
+}
+.sk-modernist-normal-white-28-3px {
+  color: transparent;
+  font-family: "Sk-Modernist", Helvetica, Arial, serif;
+  font-size: 28.3px;
+}
+.sk-modernist-regular-normal-white-18px {
+  color: var(--white);
+  font-family: 'Sk-Modernist-Regular', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --alabaster: rgba(250,250,250,1.0);
+  --eucalyptus: rgba(61,255,162,1.0);
+  --white: rgba(255,255,255,1.0);
+}
+@keyframes animate-enter-frames {
+
+from{opacity: 0;transform: translate(0, 25px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter1-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter10-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter11-frames {
+
+from{opacity: 0;transform: translate(0, 25px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter12-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter13-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter14-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter15-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter16-frames {
+
+from{opacity: 0;transform: scale(1.1);}
+to{opacity: 1;transform: scale(1);}
+}
+@keyframes animate-enter17-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter18-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter19-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter2-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter20-frames {
+
+from{opacity: 0;transform: translate(0, 25px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter21-frames {
+
+from{opacity: 0;transform: translate(0, 25px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter22-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter23-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter3-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter4-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter5-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter6-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter7-frames {
+
+from{opacity: 0;transform: translate(0, 25px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter8-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes animate-enter9-frames {
+
+from{opacity: 0;transform: translate(-25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+</style><meta name="author" content="AnimaApp.com - Design to code, Automated."></head><body style="margin: 0;background: rgba(18,18,18,1.0);"><input type="hidden" id="anPageName" name="page" value="landing-page"><div class="landing-page screen " data-id="93:29"><div class="group-C61RwL animate-enter smart-layers-pointers " data-id="93:161" show-on-scroll><img class="bg-NOXmfT" data-id="93:162" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg@1x.png"></div><img class="bg-C61RwL" data-id="93:45" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg-1@1x.png"><img class="bg-VMr6Om" data-id="93:48" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg-2@1x.png"><div class="group-73-C61RwL animate-enter1" data-id="93:363" show-on-scroll><div class="title-ql7mN0 sk-modernist-normal-white-28-3px" data-id="93:241"><span class="span1-Lv4pUT">Tap on </span><span class="span2-Lv4pUT">pay</span><span class="span3-Lv4pUT"> button</span></div><img class="group-58-ql7mN0" data-id="93:245" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/group-58@1x.png"></div><div class="group-75-C61RwL animate-enter2" data-id="93:365" show-on-scroll><div class="title-sDLNVS sk-modernist-normal-white-28-3px" data-id="93:243"><span class="span1-LfAVxj">Choose the</span><span class="span2-LfAVxj">&nbsp;</span><span class="span3-LfAVxj">commodity type </span><span class="span4-LfAVxj">and</span><span class="span5-LfAVxj">&nbsp;</span><span class="span6-LfAVxj">enter quantity</span></div><img class="group-53-sDLNVS" data-id="93:250" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/group-53@1x.png"></div><div class="group-76-C61RwL animate-enter3" data-id="93:366" show-on-scroll><div class="title-Z1JSTw sk-modernist-normal-white-28-3px" data-id="93:244"><span class="span1-BMMue1">Credits will be</span><span class="span2-BMMue1">&nbsp;</span><span class="span3-BMMue1">deducted</span><span class="span4-BMMue1">&nbsp;</span><span class="span5-BMMue1">from your account for</span><span class="span6-BMMue1">&nbsp;</span><span class="span7-BMMue1">quivalent carbon emission</span></div><img class="group-55-Z1JSTw" data-id="93:262" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/group-55@1x.png"></div><div class="group-74-C61RwL animate-enter4" data-id="93:364" show-on-scroll><div class="title-aCi14x sk-modernist-normal-white-28-3px" data-id="93:242"><span class="span1-GIXJlx">Pay cash</span><span class="span2-GIXJlx">&nbsp;</span><span class="span3-GIXJlx">and scan the</span><span class="span4-GIXJlx">&nbsp;</span><span class="span5-GIXJlx">QR code</span></div><img class="group-56-aCi14x" data-id="93:276" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/group-56@1x.png"></div><div class="group-66-C61RwL animate-enter5" data-id="93:346"><img class="bg-x6neD3" data-id="93:54" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/bg@1x.png"><img class="final-main-1-x6neD3" data-id="93:317" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/final-main-1@1x.png"></div><div class="group-67-C61RwL animate-enter6" data-id="93:347"><a href="https://app.green-cred.us/" target="_blank"><div class="button-gW6vdi smart-layers-pointers " data-id="93:339"><div class="button-Pcn8hI" data-id="93:333"><img class="title-qZKU2D" data-id="93:332" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/title@2x.png"></div></div></a><a href="https://drive.google.com/file/d/1JIN0p-ArbcVnhUeESz73v9Ajr752hMk1/view?usp=sharing" target="_blank"><div class="button-tIF87l" data-id="93:349"><img class="button-JYJGxe" data-id="93:350" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/button@2x.png"></div></a><div class="group-62-gW6vdi" data-id="93:334"><div class="title-ASxCBk" data-id="93:335">Integrating Blockchain with Carbon credits</div><div class="group-60-ASxCBk" data-id="93:336"><img class="solving-ca-reen-cards-l08qMG" data-id="93:337" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/solving-carbon-emission-with-green-cards@1x.png"><img class="solving-ca-reen-cards-HTRK2z" data-id="93:338" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/solving-carbon-emission-with-green-cards-1@2x.png"></div></div></div><div class="title-C61RwL" data-id="93:78"><span class="span1-DxkMeL">Our </span><span class="span2-DxkMeL">Solution</span></div><div class="solution-C61RwL animate-enter7" data-id="93:344" show-on-scroll><div class="title-yWKy9X sk-modernist-regular-normal-white-18px" data-id="93:190">Any Product whose manufacturing emits carbon need to be bought with green creds</div><div class="title-W9ouXn sk-modernist-regular-normal-white-18px" data-id="93:191">Users will be provided a monthly quota of green creds to spend.</div><div class="title-aauQt4 roboto-normal-white-18px" data-id="93:192">Installation of App</div><div class="title-O2nOzL sk-modernist-regular-normal-white-18px" data-id="93:193">Control over environment, by controlling the emission of Carbon</div><div class="title-wv8g62 roboto-normal-white-18px" data-id="93:194">Blockchain transaction for full transpacrency</div><div class="title-MntJHD roboto-normal-white-18px" data-id="93:195">All products that emit carbon in the manufactuing process will be bought using GreenCreds alongside money.</div><img class="componentl-v8datajson-yWKy9X" data-id="93:196" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets1-lottiefiles-com-datafiles-bqb2@2x.gif"><img class="componentl-aok5nejson-yWKy9X" data-id="93:197" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets5-lottiefiles-com-packages-lf20-@2x.gif"><img class="componentl-bfm-hvjson-yWKy9X" data-id="93:198" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets6-lottiefiles-com-temp-lf20-zbfm@2x.gif"><img class="componentl-4mv-tmjson-yWKy9X" data-id="93:199" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets5-lottiefiles-com-private-files-@2x.gif"><img class="componentl-kzdatajson-yWKy9X" data-id="93:200" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets5-lottiefiles-com-datafiles-njma@2x.gif"><img class="componentl-gu-tlkjson-yWKy9X" data-id="93:201" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/-component-lottie-https---assets1-lottiefiles-com-private-files-@2x.gif"><img class="coin-yWKy9X" data-id="93:202" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/coin@2x.png"><img class="coin-W9ouXn" data-id="93:205" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/coin-1@2x.png"><img class="coin-aauQt4" data-id="93:208" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/coin-2@2x.png"><img class="symbol-yWKy9X" data-id="93:212" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/symbol@2x.png"><img class="symbol-W9ouXn" data-id="93:213" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60317e56a8300a54412b3efe/img/symbol-1@2x.png"><div class="frame-9-yWKy9X" data-id="93:343"><div class="frame-8-0sr6MH" data-id="93:342"><img class="group-O4zVYD" data-id="93:214" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/group@1x.png"></div></div></div><div class="group-70-C61RwL animate-enter8" data-id="93:360" show-on-scroll><div class="title-kber4s" data-id="93:81"><span class="span1-lm3Xvm">To </span><span class="span2-lm3Xvm">reduce carbon emission</span><span class="span3-lm3Xvm">, by integrating </span><span class="span4-lm3Xvm">blockchain technology</span><span class="span5-lm3Xvm"> to ahieve global standard</span></div><div class="the-app-wo-n-emission-kber4s sk-modernist-normal-white-24px" data-id="93:189"><span class="span1-hiWAvb">The app works in a way that it does not add up to the carbon footprint generation and </span><span class="span2-hiWAvb">serves<br>the goal of users</span><span class="span3-hiWAvb"> to reduce and take this initiative to reduce carbon emission.</span></div><div class="title-x7I0ux" data-id="93:77">Aim</div></div><div class="group-65-C61RwL animate-enter9" data-id="93:341" show-on-scroll><img class="bg-87p3Hy" data-id="93:42" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/bg-1@1x.png"><img class="vertida-1-87p3Hy" data-id="93:67" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/vertida-1@1x.png"></div><div class="group-68-C61RwL animate-enter10" data-id="93:348" show-on-scroll><div class="title-EAchaQ" data-id="93:68"><span class="span1-xbDz09">Easy </span><span class="span2-xbDz09">onboarding process</span></div><div class="title-x253Wx" data-id="93:72">An easy onboarding proces focussed on explaining about product.</div><div class="title-8NMtNq" data-id="93:73">Easy QR code sysem for easy transfer of credits.</div></div><div class="group-52-C61RwL animate-enter11" data-id="93:85" show-on-scroll><div class="title-odKgLo sk-modernist-bold-alabaster-24-3px" data-id="93:86">Green coins</div><div class="title-joLlnU sk-modernist-bold-alabaster-24-3px" data-id="93:87">Blockchain currency</div><div class="title-6qTbQc sk-modernist-bold-alabaster-24-3px" data-id="93:88">QR code scanner</div><div class="group-51-odKgLo" data-id="93:89"><div class="coin-oGyBcK" data-id="93:90"><img class="image-6-PV1dqe" data-id="93:91" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/image-6@2x.png"><img class="image-7-PV1dqe" data-id="93:92" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/image-7@2x.png"></div><div class="token-oGyBcK" data-id="93:93"><img class="symbol-6Uv1bv" data-id="93:94" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/symbol-2@2x.png"><img class="symbol-nKLNpo" data-id="93:95" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/symbol-3@2x.png"></div><div class="group-50-oGyBcK" data-id="93:96"><img class="mask-group-xoGcjq" data-id="93:97" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/mask-group@2x.png"><img class="mask-group-82mkN9" data-id="93:100" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/mask-group-1@2x.png"></div></div></div><img class="bg-mzXdH9 animate-enter12" data-id="93:51" show-on-scroll src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603191208c32304a5f600122/img/bg-5@1x.png"><div class="group-85-C61RwL animate-enter14" data-id="93:383" show-on-scroll><img class="otp-1-rFX9Nh" data-id="93:58" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/otp-1@1x.png"><img class="login-screen-1-rFX9Nh animate-enter13" data-id="93:59" show-on-scroll src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603181f558f2303b6fb39b65/img/login-screen-1@1x.png"></div><div class="group-69-C61RwL animate-enter15" data-id="93:358" show-on-scroll><div class="title-8FQU39" data-id="93:69"><span class="span1-1Bk6AC">Smoother </span><span class="span2-1Bk6AC">process to register/login</span></div><div class="title-xOD5Xn sk-modernist-normal-white-24px" data-id="93:74"><span class="span1-pGyjSN">Integrated users phone number </span><span class="span2-pGyjSN">linked to aadhar card to fetch all details</span><span class="span3-pGyjSN">.</span></div><div class="title-LILxj4" data-id="93:75"><span class="span1-THaQYJ">To be operated under </span><span class="span2-THaQYJ">Govt. of that country</span><span class="span3-THaQYJ">, to regulate carbon emission process.</span></div></div><div class="group-72-C61RwL animate-enter16" data-id="93:362" show-on-scroll><div class="group-gqbUX1" data-id="93:38"><img class="bg-2qGyNx" data-id="93:39" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg-6@1x.png"></div><div class="group-poDR27" data-id="93:157"><img class="image-49-TGwpbG" data-id="93:387" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/60318e687a58fd2b6ba424b9/img/image-49@1x.png"><img class="bg-TGwpbG" data-id="93:158" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg-7@1x.png"></div><div class="group-eCYV9J" data-id="93:165"><img class="bg-xPEQ02" data-id="93:166" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/bg-8@1x.png"></div><img class="group-86-gqbUX1" data-id="93:388" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603191208c32304a5f600122/img/group-86@1x.png"></div><div class="group-77-C61RwL animate-enter17" data-id="93:369" show-on-scroll><div class="using-dark-n-emission-2osFvC sk-modernist-normal-white-24px" data-id="93:289"><span class="span1-qWkIkV">Using </span><span class="span2-qWkIkV">dark mode</span><span class="span3-qWkIkV"> as it helps in reducing carbon emission.</span></div><div class="app-features-2osFvC" data-id="93:290">App Features</div><div class="using-a-pw-wer-needed-2osFvC sk-modernist-normal-white-24px" data-id="93:291"><span class="span1-jh2cxs">Using a </span><span class="span2-jh2cxs">PWA</span><span class="span3-jh2cxs"> as it is smaller in size and less processing power needed.</span></div><div class="leverages--ansactions-2osFvC" data-id="93:292"><span class="span1-e0SNYK">Leverages </span><span class="span2-e0SNYK">power of</span><span class="span3-e0SNYK"> blockchain</span><span class="span4-e0SNYK"> and </span><span class="span5-e0SNYK">tezos network</span><span class="span6-e0SNYK"> to provide universal and transparent transactions.</span></div><div class="allows-you-your-hands-2osFvC" data-id="93:293">Allows you to regulate enivronment emission in palm of your&nbsp;&nbsp;hands</div><div class="easy-trans-de-scanner-2osFvC" data-id="93:294"><span class="span1-LuYSKt">Easy transaction with </span><span class="span2-LuYSKt">QR code scanner.</span></div></div><div class="group-1-C61RwL animate-enter18" data-id="93:295" show-on-scroll><div class="title-VyzZeT" data-id="93:296">GreenCredUs</div><div class="title-ri4jeA" data-id="93:297">The only currency that saves environment</div><img class="mask-group-VyzZeT" data-id="93:298" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/mask-group-2@2x.png"></div><img class="test-1-C61RwL" data-id="93:304" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603191208c32304a5f600122/img/test-1@1x.png"><div class="group-81-C61RwL animate-enter19" data-id="93:376" show-on-scroll><div class="gain-more-credits-7olElM" data-id="93:305">Gain more Credits</div><div class="submit-you-n-emission-7olElM" data-id="93:306">Submit your products for recycling on specialised recycling stations and earn more credits everytime you reduce carbon emission.</div></div><div class="group-80-C61RwL animate-enter20" data-id="93:375" show-on-scroll><div class="group-1-CX7m3G" data-id="93:31"><div class="group-79-nxK461" data-id="93:371"><div class="title-tSnZM2" data-id="93:32">GreenCredUs</div><p class="title-aVbvRo" data-id="93:33">The only currency that saves environment</p><img class="mask-group-tSnZM2" data-id="93:34" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/mask-group-3@2x.png"></div></div><a href="www.google.com" target="_blank"><div class="button-CX7m3G" data-id="93:372"><div class="button-i6hZmb" data-id="93:373"><img class="title-KZ2dJE" data-id="93:374" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/title-1@2x.png"></div></div></a></div><h1 class="title-VMr6Om" data-id="93:37">TechStack</h1><div class="title-mzXdH9" data-id="93:70">TechStack</div><div class="group-83-C61RwL animate-enter21" data-id="93:378" show-on-scroll><div class="title-jQ4qbJ sk-modernist-bold-alabaster-38-2px-2" data-id="93:169">Figma</div><div class="frame-4-jQ4qbJ" data-id="93:170"><img class="image-2-ymgm1b" data-id="93:171" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/image-2-1@2x.png"></div><div class="title-xp7Z8m sk-modernist-bold-alabaster-38-2px-2" data-id="93:172">React</div><div class="frame-3-jQ4qbJ" data-id="93:173"><img class="vector-leBUoI" data-id="93:174" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector@2x.png"></div><div class="title-4X9iy5 sk-modernist-bold-alabaster-38-2px-2" data-id="93:175">Tezos</div><div class="title-5nOBl0 sk-modernist-normal-white-18px" data-id="93:176"><span class="span1-J9OOaH">UI/UX designing</span><span class="span2-J9OOaH"> of the product</span></div><div class="title-r7zgn6" data-id="93:177"><span class="span1-VMxB0d">Frontend Development for </span><span class="span2-VMxB0d">PWA app</span></div><div class="title-dsIKeI sk-modernist-normal-white-18px" data-id="93:178"><span class="span1-7dForR">Levearaging the security and ease of </span><span class="span2-7dForR">tezos blockchain</span></div><div class="title-404iow sk-modernist-normal-white-18px" data-id="93:179"><span class="span1-c3I41H">Authentication services</span><span class="span2-c3I41H"> and </span><span class="span3-c3I41H">storage</span></div><div class="title-DVw1NO sk-modernist-normal-white-18px" data-id="93:180"><span class="span1-vKnOeI">Define the </span><span class="span2-vKnOeI">smart contract</span></div><div class="title-r1LdjF sk-modernist-normal-white-18px" data-id="93:181"><span class="span1-xpiFqI">Enabled remote </span><span class="span2-xpiFqI">collaborations</span></div><div class="title-QaB2cZ sk-modernist-normal-white-18px" data-id="93:182"><span class="span1-x7H29E">Free </span><span class="span2-x7H29E">domain service</span></div><div class="title-BjrbeJ sk-modernist-bold-alabaster-38-2px" data-id="93:183">Github</div><div class="title-g0z608 sk-modernist-bold-alabaster-38-2px" data-id="93:184">Smart py</div><div class="title-TH9Qx3 sk-modernist-bold-alabaster-38-2px" data-id="93:185">Go daddy</div><div class="title-u75Yok sk-modernist-bold-alabaster-38-2px" data-id="93:186">Firebase</div><div class="vscode-ico-e-firebase-jQ4qbJ" data-id="93:220"><img class="vector-tJMMzZ" data-id="93:221" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-1@2x.png"><img class="vector-ZHWKNs" data-id="93:222" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-2@2x.png"><img class="vector-KV7wfx" data-id="93:223" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-3@2x.png"><img class="vector-MjZcDm" data-id="93:224" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-4@2x.png"><img class="vector-zZ1zT6" data-id="93:225" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-5@2x.png"><img class="vector-2BsK37" data-id="93:226" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-6@2x.png"><img class="vector-7NMPZ6" data-id="93:227" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-7@2x.png"><img class="vector-rgr8zj" data-id="93:228" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-8@2x.png"></div><div class="smartpy-1-jQ4qbJ" data-id="93:229"><img class="vector-phZgax" data-id="93:230" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-9@2x.png"><img class="vector-OvS5gw" data-id="93:231" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-10@2x.png"><img class="vector-YXgrpn" data-id="93:232" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-11@2x.png"><img class="vector-0kI3dB" data-id="93:233" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-12@2x.png"><img class="vector-Y25QDo" data-id="93:234" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-13@2x.png"></div><div class="frame-2-jQ4qbJ" data-id="93:235"></div><div class="frame-1-jQ4qbJ" data-id="93:237"><img class="vector-OEDUi7" data-id="93:238" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/vector-14@2x.png"></div><div class="frame-5-jQ4qbJ" data-id="93:239"><img class="image-26-fwgNWF" data-id="93:240" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603188b2f8b427def6611f01/img/image-26@2x.png"></div><div class="httpsappgreen-credus-jQ4qbJ" data-id="93:288">https://app.green-cred.us/</div></div><a href="www.google.com" target="_blank"><div class="button-C61RwL animate-enter22" data-id="93:392" show-on-scroll><div class="button-xHxYv9" data-id="93:393"><img class="title-kA8htT" data-id="93:394" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603191208c32304a5f600122/img/title-2@2x.png"></div></div></a><a href="www.google.com" target="_blank"><div class="button-VMr6Om animate-enter23" data-id="93:396" show-on-scroll><img class="title-8V7Q3m" data-id="93:397" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/603191208c32304a5f600122/img/title-3@2x.png"></div></a><a href="www.youtube.com" target="_blank"><div class="button-mzXdH9" data-id="93:400"><img class="button-EWrWm8" data-id="93:401" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/602a22d21eb3cafbe1ba7351/releases/6031980babced5bae294c60c/img/button-1@2x.png"></div></a></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script><script>function ShowOnScroll() {
+    this.toShow = [];
+    this.nextEventY = undefined;
+}
+
+ShowOnScroll.prototype.show = function(e) {
+    e.style.display = "";
+};
+
+ShowOnScroll.prototype.hide = function(e) {
+    e.style.display = "none";
+};
+
+ShowOnScroll.prototype.getTop = function(e) {
+    if (e.Top != undefined && e.Top != 0) {
+        return e.Top;
+    }
+    var top = 0;
+    var iter = e;
+    do {
+        top += iter.offsetTop || 0;
+        iter = iter.offsetParent;
+    } while (iter);
+    e.Top = top;
+    return top;
+};
+
+ShowOnScroll.prototype.onScroll = function() {
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+        return;
+    }
+    this.nextEventY = undefined;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+        } else {
+            this.nextEventY = top;
+            break;
+        }
+    }
+};
+
+ShowOnScroll.prototype.resetScrolling = function() {
+    // Clear state
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        this.show(e);
+    }
+    this.toShow = [];
+    this.nextEventY == undefined;
+
+    // Collect items
+    var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+    itemsToShowOnScroll = itemsToShowOnScroll.filter(function(e) { return e.getAttribute("show-on-scroll") != undefined });
+    var getTop = this.getTop;
+    itemsToShowOnScroll.sort(function(a, b) {
+        return getTop(a) - getTop(b);
+    });
+    for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+        var e = itemsToShowOnScroll[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            continue;
+        }
+        this.toShow.push(e);
+        this.hide(e);
+        this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+    }
+};
+
+ShowOnScroll.prototype.handleEvent = function(e) {
+    switch (e.type) {
+        case "scroll":
+            this.onScroll();
+            break;
+        case "resize":
+            this.resetScrolling();
+            break;
+    }
+};
+
+ShowOnScroll.prototype.init = function() {
+    this.resetScrolling();
+    window.addEventListener("scroll", this);
+    window.addEventListener("resize", this);
+};
+
+// After anima-src
+setTimeout(function() {
+    var instShowOnScroll = new ShowOnScroll();
+    instShowOnScroll.init();
+}, 250);</script></body></html>
+
