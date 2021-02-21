@@ -2,8 +2,6 @@
 
 >The only currency that helps your to save your environment
 
-## KU Hackfest 2021
-
 ![Banner](assets/banner.png)
 
 ## Aim
